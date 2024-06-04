@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAM : Shi Brand Video</title>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./pics/favicon.png" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(./images/paper_bg.jpg) no-repeat top center;
+        }
+
+        #wrapper {
+            width: 1280px;
+            margin: 50px auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        #wrapper h1 {
+            font-family: "Hahmlet", serif;
+            color: #89143b;
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        #wrapper video {
+            width: 1280px;
+            height: 650px;
+        }
+
+        .fixed_box {
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            width: 40px;
+        }
+
+        .home_btn,
+        .top_btn {
+            display: inline-block;
+            width: 55px;
+            line-height: 55px;
+            background-color: #89143b;
+            text-align: center;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            color: #fff;
+            transition: all 0.5s;
+        }
+
+        .fixed_box a:hover {
+            background-color: #f6c0d8;
+            color: #f34c9d;
+            font-weight: 500;
+        }
+
+        @media (max-width:1320px) {
+            #wrapper {
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                height: 0;
+                padding-bottom: 56.25%;
+            }
+
+            #wrapper video {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Brand Video</h1>
+        <video width="100%" src="./video/main_banner.mp4" title="JAM : Shi Brand Video" autoplay muted loop></video>
+    </div>
+    <div class="fixed_box">
+        <a href="https://minjibyun33.github.io/MinjiByun_Portfolio/" class="home_btn">
+            Home
+        </a>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
